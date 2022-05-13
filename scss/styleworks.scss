@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before,
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.galery {
+    line-height: 0;
+    &__item {
+        width: 600px;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (min-width: 600px) {
+    .galery {
+        &__item {
+            width: 32.5%;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
