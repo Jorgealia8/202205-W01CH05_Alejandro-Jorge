@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before,
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.galery {
+  line-height: 0;
+}
+
+.galery__item {
+  max-width: 600px;
+}
