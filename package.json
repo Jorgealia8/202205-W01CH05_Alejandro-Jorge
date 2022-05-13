@@ -1,0 +1,27 @@
+{
+    "name": "202205-w01ch05_alejandro-jorge",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prepare": "husky install",
+        "sass": "sass scss:css -w --no-source-map"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Jorgealia8/202205-W01CH05_Alejandro-Jorge.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Jorgealia8/202205-W01CH05_Alejandro-Jorge/issues"
+    },
+    "homepage": "https://github.com/Jorgealia8/202205-W01CH05_Alejandro-Jorge#readme",
+    "devDependencies": {
+        "husky": "^8.0.1"
+    },
+    "dependencies": {
+        "sass": "^1.51.0"
+    }
+}
