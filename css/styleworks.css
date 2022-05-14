@@ -43,6 +43,9 @@ body {
 }
 
 @media (min-width: 600px) {
+  .galery {
+    margin-top: 6%;
+  }
   .galery__item {
     max-width: 33.33%;
     margin: 0;
@@ -59,5 +62,7 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
+    clip-path: polygon(0 32%, 100% 0%, 100% 68%, 0% 100%);
+    margin-top: -10.5%;
   }
 }

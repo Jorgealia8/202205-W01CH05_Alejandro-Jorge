@@ -101,12 +101,20 @@ body {
 }
 
 @media (min-width: 600px) {
+  .article {
+    margin-top: 0;
+  }
   .article__image {
     display: block;
     width: 100vw;
+    position: relative;
+    z-index: 2;
+    clip-path: polygon(0 24%, 100% 0%, 100% 75%, 0% 100%);
   }
 
   .wrapper {
+    margin-left: 13px;
+    padding-right: 13px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -123,5 +131,20 @@ body {
     max-width: 600px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  body {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container__text {
+    position: relative;
+    top: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
   }
 }
