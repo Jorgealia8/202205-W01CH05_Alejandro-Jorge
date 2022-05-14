@@ -13,7 +13,7 @@
     </head>
     <body>
         <header class="header">
-            <a href=""
+            <a href="#footer"
                 ><img
                     src="./images/menu.png"
                     alt="menu icon"
@@ -34,7 +34,7 @@
                     alt="Renderizado de un coche rosa"
                 />
             </section>
-            <section>
+            <section class="content__text">
                 <h2>lorem ipsum dolor sit</h2>
                 <p>
                     amet, consecteur adipisici elit, sed eitumod tempo incidunt
@@ -42,16 +42,20 @@
                     quis nostrud
                 </p>
                 <img
-                    src="./images/eliminar-simbolo.png"
+                    src="./images/iconos/X.svg"
                     alt="icono de una x"
-                    class="icon"
+                    class="icon icon--x"
                 />
-                <img src="./images/wave.png" alt="wave icon" class="icon" />
+                <img
+                    src="./images/iconos/wave.svg"
+                    alt="wave icon"
+                    class="icon icon--wave"
+                />
             </section>
-            <section>
+            <section class="content__images">
                 <h2>lorem ipsum</h2>
-                <p>dolor sit</p>
-                <div>
+                <p class="underline">dolor sit</p>
+                <div class="subsections">
                     <img
                         src="./images/home/media/media07.jpg"
                         alt=""
@@ -59,15 +63,17 @@
                     />
                     <p>Lorem ipsum dolor sit amet</p>
                 </div>
-                <div>
+                <div class="subsections">
                     <img
                         src="./images/home/media/media09.jpg"
                         alt=""
                         class="image"
                     />
-                    <p>Lorem ipsum dolor sit amet. consecteur</p>
+                    <p class="middle-paragraph">
+                        Lorem ipsum dolor sit amet. consecteur
+                    </p>
                 </div>
-                <div>
+                <div class="subsections">
                     <img
                         src="./images/home/media/media10.jpg"
                         alt=""
@@ -77,13 +83,19 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
-            <h2 class="footer__title">Lorem ipsum dolor</h2>
+        <footer class="footer" id="footer">
+            <h2 class="footer__title">
+                Lorem
+                <span class="footer__title--crossed"><span>ipsum</span></span>
+                dolor
+            </h2>
+
+            <img src="./images/iconos/X-green.svg" alt="X icon" class="icon" />
             <nav class="nav">
-                <a href="" class="nav__link">velit</a>
-                <a href="" class="nav__link">esee</a>
-                <a href="" class="nav__link">cillum</a>
-                <a href="" class="nav__link">dolore</a>
+                <a href="" class="nav__link">Home</a>
+                <a href="" class="nav__link">Works</a>
+                <a href="" class="nav__link">About</a>
+                <a href="" class="nav__link">Contact</a>
             </nav>
             <div class="information">
                 <h2 class="information__title">Lorem ipsum</h2>
@@ -97,6 +109,23 @@
             </div>
             <div class="information">
                 <h2 class="information__title">Lorem ipsum</h2>
+                <div class="container-logos">
+                    <img
+                        src="./images/iconos/instagram.svg"
+                        alt="Instagram icon"
+                        class="container-logos__logo container-logos__logo--left"
+                    />
+                    <img
+                        src="./images/iconos/Facebook.svg"
+                        alt="Facebook icon"
+                        class="container-logos__logo"
+                    />
+                    <img
+                        src="./images/iconos/Vimeo.svg"
+                        alt="Vimeo icon"
+                        class="container-logos__logo container-logos__logo--right"
+                    />
+                </div>
             </div>
             <div class="information">
                 <h2 class="information__title">Lorem ipsum</h2>
