@@ -19,12 +19,25 @@
                     alt="menu icon"
                     class="header__icon"
             /></a>
+
+            <p class="header__text header__text--hidden">Home</p>
+
+            <p class="header__text header__text--hidden">Works</p>
+
             <img
                 src="./images/home/media/media03.svg"
                 alt="Panic logo"
                 class="header__logo"
             />
-            <p class="header__text">qui</p>
+            <img
+                src="./images/home/media/media03-large.svg"
+                alt="Panic logo"
+                class="header__logo--hidden"
+            />
+            <p class="header__text">Home</p>
+            <p class="header__text header__text--hidden">About</p>
+
+            <p class="header__text header__text--hidden">Contact</p>
         </header>
         <main class="content">
             <section class="video-presentation">
@@ -33,6 +46,17 @@
                     src="./images/home/media/media04.jpg"
                     alt="Renderizado de un coche rosa"
                 />
+                <video
+                    autoplay
+                    loop
+                    width="100%"
+                    class="video-presentation__video"
+                >
+                    <source
+                        src="./images/home/media/mp4.mp4"
+                        type="video/mp4"
+                    />
+                </video>
             </section>
             <section class="content__text">
                 <h2>lorem ipsum dolor sit</h2>
@@ -55,31 +79,35 @@
             <section class="content__images">
                 <h2>lorem ipsum</h2>
                 <p class="underline">dolor sit</p>
-                <div class="subsections">
-                    <img
-                        src="./images/home/media/media07.jpg"
-                        alt=""
-                        class="image"
-                    />
-                    <p>Lorem ipsum dolor sit amet</p>
-                </div>
-                <div class="subsections">
-                    <img
-                        src="./images/home/media/media09.jpg"
-                        alt=""
-                        class="image"
-                    />
-                    <p class="middle-paragraph">
-                        Lorem ipsum dolor sit amet. consecteur
-                    </p>
-                </div>
-                <div class="subsections">
-                    <img
-                        src="./images/home/media/media10.jpg"
-                        alt=""
-                        class="image"
-                    />
-                    <p>Lorem ipsum</p>
+                <div class="subsections__container">
+                    <div class="subsections">
+                        <img
+                            src="./images/home/media/media07.jpg"
+                            alt=""
+                            class="image"
+                        />
+                        <p class="double-paragraph">
+                            Lorem ipsum dolor sit amet
+                        </p>
+                    </div>
+                    <div class="subsections">
+                        <img
+                            src="./images/home/media/media09.jpg"
+                            alt=""
+                            class="image"
+                        />
+                        <p class="double-paragraph">
+                            Lorem ipsum dolor sit amet. consecteur
+                        </p>
+                    </div>
+                    <div class="subsections">
+                        <img
+                            src="./images/home/media/media10.jpg"
+                            alt=""
+                            class="image"
+                        />
+                        <p>Lorem ipsum</p>
+                    </div>
                 </div>
             </section>
         </main>
@@ -98,16 +126,18 @@
                 <a href="" class="nav__link">Contact</a>
             </nav>
             <div class="information">
-                <h2 class="information__title">Lorem ipsum</h2>
-                <p class="information__content">dolor</p>
-                <p class="information__content">sit amet, consectetur</p>
+                <h2 class="information__title align-left">Lorem ipsum</h2>
+                <p class="information__content align-left">dolor</p>
+                <p class="information__content align-left">
+                    sit amet, consectetur
+                </p>
             </div>
             <div class="information">
                 <h2 class="information__title">Lorem</h2>
                 <p class="information__content">¡ipsum dolor sit</p>
                 <p class="information__content">amet, consectetur</p>
             </div>
-            <div class="information">
+            <div class="information information--logos">
                 <h2 class="information__title">Lorem ipsum</h2>
                 <div class="container-logos">
                     <img
@@ -127,19 +157,19 @@
                     />
                 </div>
             </div>
-            <div class="information">
+            <div class="information--move">
                 <h2 class="information__title">Lorem ipsum</h2>
                 <p class="information__content">dolor</p>
                 <p class="information__content">sit amet,</p>
                 <p class="information__content">consectetur</p>
             </div>
-            <div class="information">
+            <div class="information--right">
                 <h2 class="information__title">Lorem ipsum</h2>
                 <p class="information__content">dolor</p>
                 <p class="information__content">sit amet,</p>
                 <p class="information__content">consectetur</p>
             </div>
-            <div class="information">
+            <div class="information--center">
                 <h2 class="information__title">Lorem ipsum</h2>
                 <p class="information__content">dolor</p>
                 <p class="information__content">sit amet,</p>
