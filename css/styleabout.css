@@ -11,27 +11,140 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #16ffbd;
 }
 
 .article {
   background-color: #16ffbd;
-  color: rgba(0, 0, 0, 0.557);
+  color: rgba(0, 0, 0, 0.699);
+  margin-top: 40px;
 }
-
-.containerfirst,
-.containersecond,
-.containerthree,
-.containerfour {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .article__item {
   margin: 0;
   padding: 0%;
+  margin-top: 4px;
+}
+.article__image {
+  display: none;
 }
 
 .container {
   margin: 0 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container__item {
+  margin: 0.5rem;
+  text-align: center;
+}
+.container__item--text {
+  line-height: 2.5rem;
+}
+.container__image {
+  width: 10px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.container__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container--row {
+  max-width: 300px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper__text {
+  text-align: center;
+  width: 300px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header .header__icon {
+  height: 1.5em;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+.header .header__logo {
+  margin-top: 2rem;
+}
+.header .header__text {
+  margin-right: 1rem;
+  margin-top: 1rem;
+  font-weight: 400;
+  letter-spacing: 8px;
+}
+
+.content .video-presentation .video-presentation__image {
+  max-width: 100%;
+}
+.content .icon {
+  height: 1.5em;
+}
+.content .image {
+  max-width: 100%;
+}
+
+@media (min-width: 600px) {
+  .article {
+    margin-top: 0;
+  }
+  .article__image {
+    display: block;
+    width: 100vw;
+    position: relative;
+    z-index: 2;
+    clip-path: polygon(0 24%, 100% 0%, 100% 75%, 0% 100%);
+  }
+
+  .wrapper {
+    margin-left: 13px;
+    padding-right: 13px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+  }
+  .wrapper__text {
+    margin: 6px;
+    width: 200px;
+  }
+
+  .container__item--text {
+    width: 100vw;
+    max-width: 600px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  body {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container__text {
+    position: relative;
+    top: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
 }
