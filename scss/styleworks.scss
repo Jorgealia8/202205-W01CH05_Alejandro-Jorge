@@ -161,6 +161,9 @@ body {
             margin: 0 40px;
         }
     }
+    a {
+        display: none;
+    }
     .galery {
         margin-top: 6%;
         &__item {
@@ -185,6 +188,7 @@ body {
         }
     }
     .footer {
+        margin-top: -10%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 0.05fr 1fr 1fr 1fr;
