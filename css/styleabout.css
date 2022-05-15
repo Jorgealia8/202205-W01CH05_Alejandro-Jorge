@@ -179,6 +179,8 @@ body a {
 
 @media (min-width: 600px) {
   .header {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
     justify-content: center;
   }
   .header nav {
@@ -186,6 +188,7 @@ body a {
   }
   .header nav a {
     color: #070c13;
+    font-family: "Oswald", sans-serif;
   }
   .header nav a:hover {
     color: pink;
@@ -215,13 +218,17 @@ body a {
     margin: 0 40px;
   }
 
+  a {
+    display: none;
+  }
+
   .article {
     width: auto;
     margin-top: 0;
   }
   .article__image {
     display: block;
-    width: auto;
+    width: 100%;
     position: relative;
     z-index: 2;
     clip-path: polygon(0 24%, 100% 0%, 100% 75%, 0% 100%);

@@ -187,11 +187,14 @@ body {
 
 @media (min-width: 600px) {
     .header {
+        font-family: "Oswald", sans-serif;
+        font-weight: 300;
         justify-content: center;
         nav {
             display: flex;
             a {
                 color: #070c13;
+                font-family: "Oswald", sans-serif;
             }
 
             a:hover {
@@ -224,12 +227,15 @@ body {
             margin: 0 40px;
         }
     }
+    a {
+        display: none;
+    }
     .article {
         width: auto;
         margin-top: 0;
         &__image {
             display: block;
-            width: auto;
+            width: 100%;
             position: relative;
             z-index: 2;
             clip-path: polygon(0 24%, 100% 0%, 100% 75%, 0% 100%);
