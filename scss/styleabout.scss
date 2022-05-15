@@ -1,17 +1,21 @@
 *,
-*::after,
-*::before,
-*,
-*:after,
-*:before {
+::after,
+::before {
     box-sizing: border-box;
-    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    letter-spacing: 3px;
 }
 
 body {
     margin: 0;
-    padding: 0;
     background-color: #16ffbd;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    a {
+        color: aliceblue;
+        text-decoration: none; /* no underline */
+    }
 }
 
 .article {
@@ -72,7 +76,7 @@ body {
     }
 }
 
-header {
+.header {
     display: flex;
     justify-content: space-between;
     &__icon {
@@ -221,10 +225,11 @@ header {
         }
     }
     .article {
+        width: auto;
         margin-top: 0;
         &__image {
             display: block;
-            width: 100vw;
+            width: auto;
             position: relative;
             z-index: 2;
             clip-path: polygon(0 24%, 100% 0%, 100% 75%, 0% 100%);
@@ -265,6 +270,7 @@ header {
         margin-top: 0;
     }
     .footer {
+        width: auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 0.05fr 1fr 1fr 1fr;
