@@ -198,7 +198,17 @@ body {
 @media (min-width: 600px) {
     .header {
         justify-content: center;
-        width: 100vw;
+        nav {
+            display: flex;
+            a {
+                color: #070c13;
+            }
+
+            a:hover {
+                color: pink;
+                text-decoration: underline;
+            }
+        }
         &__icon {
             display: none;
         }
@@ -246,7 +256,7 @@ body {
         align-items: center;
         border: 0 30px;
         .icon {
-            margin: 0 200px;
+            margin: auto;
         }
 
         .information {
@@ -260,7 +270,6 @@ body {
             .container-logos {
                 max-width: 300px;
                 min-width: 100px;
-                justify-content: space-around;
             }
             &--logos {
                 grid-column: 2/3;
@@ -270,7 +279,8 @@ body {
                 justify-content: center;
                 align-items: center;
                 padding: 0;
-                min-width: 50px;
+                min-width: 30px;
+
                 h2 {
                     text-align: center;
                 }
