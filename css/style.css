@@ -189,7 +189,16 @@ body a {
 @media (min-width: 600px) {
   .header {
     justify-content: center;
-    width: 100vw;
+  }
+  .header nav {
+    display: flex;
+  }
+  .header nav a {
+    color: #070c13;
+  }
+  .header nav a:hover {
+    color: pink;
+    text-decoration: underline;
   }
   .header__icon {
     display: none;
@@ -241,7 +250,7 @@ body a {
     border: 0 30px;
   }
   .footer .icon {
-    margin: 0 200px;
+    margin: auto;
   }
   .footer .information {
     padding-left: 100px;
@@ -255,7 +264,6 @@ body a {
   .footer .information .container-logos {
     max-width: 300px;
     min-width: 100px;
-    justify-content: space-around;
   }
   .footer .information--logos {
     grid-column: 2/3;
@@ -265,7 +273,7 @@ body a {
     justify-content: center;
     align-items: center;
     padding: 0;
-    min-width: 50px;
+    min-width: 30px;
   }
   .footer .information--logos h2 {
     text-align: center;
