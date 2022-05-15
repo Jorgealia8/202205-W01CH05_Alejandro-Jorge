@@ -8,21 +8,36 @@
         <link rel="stylesheet" href="./css/styleabout.css" />
     </head>
     <body>
-        <header>
-            <header class="header">
-                <a href=""
-                    ><img
-                        src="./images/menu.png"
-                        alt="menu icon"
-                        class="header__icon"
-                /></a>
+        <header class="header">
+            <a href="#footer"
+                ><img
+                    src="./images/menu.png"
+                    alt="menu icon"
+                    class="header__icon"
+            /></a>
+            <nav>
+                <a href="" class="header__text header__text--hidden">Home</a>
+                <a href="works.html" class="header__text header__text--hidden"
+                    >Works</a
+                >
+
                 <img
                     src="./images/home/media/media03.svg"
                     alt="Panic logo"
                     class="header__logo"
                 />
-                <p class="header__text">in</p>
-            </header>
+                <img
+                    src="./images/home/media/media03-large.svg"
+                    alt="Panic logo"
+                    class="header__logo--hidden"
+                />
+                <a class="header__text header__text--hidden" href="about.html"
+                    >About</a
+                >
+                <a class="header__text header__text--hidden" href="">Contact</a>
+            </nav>
+
+            <p class="header__text">Home</p>
         </header>
         <article class="article">
           <img class="article__image"
@@ -116,7 +131,70 @@
                 </section>
             </div>
         </article>
+        <footer class="footer" id="footer">
+            <h2 class="footer__title">
+                Lorem
+                <span class="footer__title--crossed"><span>ipsum</span></span>
+                dolor
+            </h2>
 
-        <footer></footer>
+            <img src="./images/iconos/X-green.svg" alt="X icon" class="icon" />
+            <nav class="nav">
+                <a href="" class="nav__link">Home</a>
+                <a href="works.html" class="nav__link">Works</a>
+                <a href="about.html" class="nav__link">About</a>
+                <a href="" class="nav__link">Contact</a>
+            </nav>
+            <div class="information">
+                <h2 class="information__title align-left">Lorem ipsum</h2>
+                <p class="information__content align-left">dolor</p>
+                <p class="information__content align-left">
+                    sit amet, consectetur
+                </p>
+            </div>
+            <div class="information">
+                <h2 class="information__title">Lorem</h2>
+                <p class="information__content">¡ipsum dolor sit</p>
+                <p class="information__content">amet, consectetur</p>
+            </div>
+            <div class="information information--logos">
+                <h2 class="information__title">Lorem ipsum</h2>
+                <div class="container-logos">
+                    <img
+                        src="./images/iconos/instagram.svg"
+                        alt="Instagram icon"
+                        class="container-logos__logo container-logos__logo--left"
+                    />
+                    <img
+                        src="./images/iconos/Facebook.svg"
+                        alt="Facebook icon"
+                        class="container-logos__logo"
+                    />
+                    <img
+                        src="./images/iconos/Vimeo.svg"
+                        alt="Vimeo icon"
+                        class="container-logos__logo container-logos__logo--right"
+                    />
+                </div>
+            </div>
+            <div class="information--move">
+                <h2 class="information__title">Lorem ipsum</h2>
+                <p class="information__content">dolor</p>
+                <p class="information__content">sit amet,</p>
+                <p class="information__content">consectetur</p>
+            </div>
+            <div class="information--right">
+                <h2 class="information__title">Lorem ipsum</h2>
+                <p class="information__content">dolor</p>
+                <p class="information__content">sit amet,</p>
+                <p class="information__content">consectetur</p>
+            </div>
+            <div class="information--center">
+                <h2 class="information__title">Lorem ipsum</h2>
+                <p class="information__content">dolor</p>
+                <p class="information__content">sit amet,</p>
+                <p class="information__content">consectetur</p>
+            </div>
+        </footer>
     </body>
 </html>
